@@ -1,0 +1,107 @@
+/*
+    Author: Davonta Gardner
+    Date: 10/19/2025
+    Filename: styles.css
+    Description: CSS3 stylesheet for index.html homepage project
+*/
+
+/* ===== GLOBAL STYLES ===== */
+body {
+    background: linear-gradient(to right, #f0f4f8, #d9e4ec);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* ===== HEADER SECTION ===== */
+header {
+    text-align: center;
+    background-color: #0a3d62;
+    color: #ffffff;
+    padding: 25px 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* ===== NAVIGATION MENU ===== */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    color: #ffffff;
+    background-color: #1e90ff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    color: #fffacd;
+}
+
+/* ===== MAIN CONTENT SECTIONS ===== */
+main {
+    padding: 40px 10%;
+}
+
+section {
+    background-color: #ffffff;
+    margin: 25px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #0a3d62;
+    border-bottom: 2px solid #1e90ff;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1em;
+}
+
+/* ===== FOOTER SECTION ===== */
+footer {
+    background-color: #0a3d62;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+footer p {
+    margin: 0;
+}
