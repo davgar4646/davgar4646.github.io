@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="fade-in">My Blog Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <section id="blog" class="blog-container">
+
+            <article class="blog-post fade-in">
+                <h2>Blog Post One</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pharetra iaculis mi, non vehicula mauris.</p>
+                <p>Morbi faucibus tortor nec magna fermentum, a aliquet urna sollicitudin. Nulla facilisi.</p>
+            </article>
+
+            <article class="blog-post fade-in">
+                <h2>Blog Post Two</h2>
+                <p>Curabitur vitae ipsum nec lorem suscipit cursus. Donec sit amet metus ac ante posuere gravida.</p>
+                <p>Nunc id ligula at velit consequat sollicitudin ac at sem. Duis ut lectus euismod, pharetra tortor.</p>
+            </article>
+
+        </section>
+
+        <section id="contact" class="contact-section fade-in">
+            <h2>Contact Me</h2>
+            <form>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>StudentID: YOUR-STUDENT-ID-HERE &copy; 2025</p>
+    </footer>
+
+</body>
+</html>
