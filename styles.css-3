@@ -1,0 +1,148 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 0 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* NAV HOVER EFFECT */
+nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Blog Layout */
+.blog-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.blog-post {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 30px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid #aaa;
+    border-radius: 5px;
+    transition: border-color 0.4s ease, background-color 0.4s ease;
+}
+
+/* Form hover / focus transition */
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    border-color: #333;
+    background-color: #f0f0f0;
+}
+
+button {
+    padding: 12px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* FADE-IN ANIMATION */
+.fade-in {
+    animation: fadein 1.5s ease-in;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* MEDIA QUERIES */
+
+/* Phones - max width 767px */
+@media (max-width: 767px) {
+    .blog-container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Tablets - 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blog-container {
+        flex-direction: column;
+    }
+}
+
+/* Desktops - 1025px and up */
+@media (min-width: 1025px) {
+    .blog-container {
+        flex-direction: row;
+    }
+}
